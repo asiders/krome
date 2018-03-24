@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Discover all your events in one place. Buy tickets, create events and use advance tools to plan the organization of your events.">
+
+    <title>Kromevents | Landing Page</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/krome_.css">
+</head>
+<body onresize="resized()" onscroll="pagescrolling()">
+    
+    <div id="sign-in"><br>
+          <form class="form log-in-form" >
+            <div class="login-wrapper">
+            <a href="#" class="float-right close-sign-in" onclick="hideSignin()">&times;</a>
+            <h2>Sign in</h2>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" type="email" />
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input class="form-control" type="password"/>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value=""> Remember me
+                </label>
+              </div><br>
+              <input class="btn-primary sign-btn" type="submit" value="Submit"> 
+              <a class="sign-alt" href="#" onclick="showSignup()">Don't have an account?</a>
+              </div>
+              </div>
+            </div>
+              <div class="left-shadow"></div>
+              <div class="right-shadow"></div>
+              <div class="cover-shadow"></div>
+              
+          </form>
+    </div>
+    <div id="sign-up"><br>
+          <form class="form log-in-form" >
+            <div class="login-wrapper">
+            <a href="#" class="float-right close-sign-up" onclick="hideSignup()">&times;</a>
+            <h2>Sign up</h2>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                    <label>Full-Name</label>
+                    <input class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control" type="email" />
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input class="form-control" type="password"/>
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input class="form-control" type="password"/>
+                </div>
+<!--                <button class=""></button>-->
+                <input class="btn btn-primary sign-btn" type="submit" value="Submit"> 
+                <a class="sign-alt" href="#" onclick="showSignin()">Already have an account?</a>
+              </div>
+              </div>
+            </div>
+              <div class="left-shadow"></div>
+              <div class="right-shadow"></div>
+<!--              <div class="cover-shadow"></div>-->
+              
+          </form>
+    </div>
+    
+    
+<!--IMAGES FOR BG SLIDE SHOW-->
+<div hidden>
+  <p id="kromevent-slide-img-count">5</p>
+  <P class="ke-item">assets/img/chicago.jpg</P>
+  <p class="ke-item">assets/img/gh.jpg</p>
+  <p class="ke-item">assets/img/religious.jpeg</p>
+  <p class="ke-item">assets/img/trip.jpeg</p>
+  <p class="ke-item">assets/img/banner.png</p>
+  <p id="ke-current">4</p>
+</div>
+    
+    <!-- NAV LINKS ON MOBILES MENU -->
+      <div class="dropper">
+      		<ul class="navbar-nav text-uppercase" id="navigation">
+        		<li class="top-links nav-item"><a class="nav-link" href="browse-events.html"  class="nav-link">Browse Events</a></li>
+        		<li class="top-links nav-item"><a class="nav-link" href="#" onclick="showSignin()"><span>Sign in </span> <i data-feather="user"></i></a></li>
+        		<li class="top-links create-event nav-item" ><a href="create-event.html" class="create-event btn btn-outline-primary btn-sm">Create Events</a></li>
+      		</ul>
+      </div>
+	<div class="navbar" id="navbar">
+	  <a class="navbar-brand" href="#"><img src="assets/img/Kromevents5_1.svg" alt=""></a>
+        
+        
+        
+        
+	  <div class="navbar-right-div">
+          <!-- SEARCH BAR ON THE NAVBAR -->
+		  <form class="form-inline navbar-search" id="search1">
+        	<div class="input-group" >
+           	<input class="top-search form-control" type="text" placeholder="Search events">
+        	<a class="top-search-btn btn btn-primary"><img src="assets/img/search.svg"></a>
+        	</div>
+          </form>
+          <!-- NAV LINKS ON DESKTOP NAVBAR -->
+          <div>
+      		<ul class="navbar-nav text-uppercase" >
+        		<li class="top-links nav-item"><a class="nav-link" href="browse-events.html"  class="nav-link">Browse Events</a></li>
+        		<li class="top-links nav-item"><a onclick="showSignin()" class="nav-link" href="#"><span>Sign in </span></a></li>
+        		<li class="top-links create-event nav-item" ><a href="create-event.html" class="create-event btn btn-outline-primary btn-sm">Create Events</a></li>
+      		</ul>
+          </div>
+      </div>
+      <button onclick="showmenu()" class="btn btn-primary" type="button" id="toogle-navbar"><i data-feather="menu"></i></button>
+    </div>
+		<!-- SEARCH BAR BELLOW THE NAVBAR -->
+	<div class="container search-below-navbar">
+		<form class="form-inline navbar-search" id="search2">
+       		<div class="input-group" >
+       		<input class="top-search form-control" type="text" placeholder="Search events">
+       		<a href="" class="top-search-btn btn btn-primary"><img src="assets/img/search.svg"></a>
+       		</div>
+    	</form>
+    </div>
+    <header class="banner">
+    <div class="banner-wrapper">
+        <section  class="search-widget text-center">
+            <div id="navbar-color"></div>
+            <h3 class="h2" id="search-show" onclick="timeoutnextbg()">Filter through our events</h3>
+            <form action="#" method="post" class="search-form form-inline justify-content-center">
+                <div class="form-group">
+                    <input type="text" placeholder="Search events" class="form-control" id="search-event">
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="search-category">
+                        <option value="" selected>Filter by Category</option>
+                        <option value="Item 1">Item 1</option>
+                        <option value="Item 2">Item 2</option>
+                        <option value="Item 3">Item 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Location" class="form-control" id="search-location">
+                </div>
+                <div class="form-group">
+                    <select class="form-control" id="search-date">
+                        <option value="" selected>Filter by Date</option>
+                        <option value="Item 1">Item 1</option>
+                        <option value="Item 2">Item 2</option>
+                        <option value="Item 3">Item 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <a class="btn btn-primary btn-sm" type="submit" id="search-submit">Search</a>
+                </div>
+                <div id="navbar-search"></div>
+            </form>
+        </section>
+        </div>
+    </header>
+    <div class="page-wrapper container">
+        <h4 class="h3">Featured Events</h4>
+        <div class="masonry">
+            <div class="card">
+              <div class="card-content">
+                <div class="price-wrapper">
+                  <span class="badge badge-dark">Ghc 0.00</span>
+                </div>
+                <img class="masonry-item-image " src="assets/img/business.jpeg">
+                <div class="event-name">Event-Name</div>
+              </div>
+              <div class="card-footer">
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="10:00 am"><a class="card-icons" href=""><i data-feather="watch"></i></a><div class="time-content">6:00 am</div></div>
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="23rd Jan 1880"><a class="card-icons" href=""><i data-feather="calendar"></i></a><div class="calendar-content">23rd March</div></div>
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="University of Cape Coast (Main auditorium)"><a class="card-icons" href=""><i data-feather="map-pin"></i></a><div class="location-content">UCC</div></div>
+              </div>
+            </div><div class="fit"></div>
+            <div class="card">
+              <div class="card-content">
+                <div class="price-wrapper">
+                  <span class="badge badge-dark">Ghc 0.00</span>
+                </div>
+                <img class="masonry-item-image " src="assets/img/business.jpeg">
+                <div class="event-name">Event-Name</div>
+              </div>
+              <div class="card-footer">
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="10:00 am"><a class="card-icons" href=""><i data-feather="watch"></i></a><div class="time-content">6:00 am</div></div>
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="23rd Jan 1880"><a class="card-icons" href=""><i data-feather="calendar"></i></a><div class="calendar-content">23rd March</div></div>
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="University of Cape Coast (Main auditorium)"><a class="card-icons" href=""><i data-feather="map-pin"></i></a><div class="location-content">UCC</div></div>
+              </div>
+            </div><div class="fit"></div>
+            <div class="card">
+              <div class="card-content">
+                <div class="price-wrapper">
+                  <span class="badge badge-dark">Ghc 0.00</span>
+                </div>
+                <img class="masonry-item-image " src="assets/img/business.jpeg">
+                <div class="event-name">Event-Name</div>
+              </div>
+              <div class="card-footer">
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="10:00 am"><a class="card-icons" href=""><i data-feather="watch"></i></a><div class="time-content">6:00 am</div></div>
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="23rd Jan 1880"><a class="card-icons" href=""><i data-feather="calendar"></i></a><div class="calendar-content">23rd March</div></div>
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="University of Cape Coast (Main auditorium)"><a class="card-icons" href=""><i data-feather="map-pin"></i></a><div class="location-content">UCC</div></div>
+              </div><div class="fit"></div>
+            </div>
+        </div>
+        <br>
+        <h4 class="h3">Upcoming Events</h4>
+        <div class="masonry">
+            <div class="card">
+              <div class="card-content">
+                <div class="price-wrapper">
+                  <span class="badge badge-dark">Ghc 0.00</span>
+                </div>
+                <img class="masonry-item-image " src="assets/img/business.jpeg">
+                <div class="event-name">Event-Name</div>
+              </div>
+              <div class="card-footer">
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="10:00 am"><a class="card-icons" href=""><i data-feather="watch"></i></a><div class="time-content">6:00 am</div></div>
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="23rd Jan 1880"><a class="card-icons" href=""><i data-feather="calendar"></i></a><div class="calendar-content">23rd March</div></div>
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="University of Cape Coast (Main auditorium)"><a class="card-icons" href=""><i data-feather="map-pin"></i></a><div class="location-content">UCC</div></div>
+              </div>
+            </div><div class="fit"></div>
+            <div class="card">
+              <div class="card-content">
+                <div class="price-wrapper">
+                  <span class="badge badge-dark">Ghc 0.00</span>
+                </div>
+                <img class="masonry-item-image " src="assets/img/business.jpeg">
+                <div class="event-name">Event-Name</div>
+              </div>
+              <div class="card-footer">
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="10:00 am"><a class="card-icons" href=""><i data-feather="watch"></i></a><div class="time-content">6:00 am</div></div>
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="23rd Jan 1880"><a class="card-icons" href=""><i data-feather="calendar"></i></a><div class="calendar-content">23rd March</div></div>
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="University of Cape Coast (Main auditorium)"><a class="card-icons" href=""><i data-feather="map-pin"></i></a><div class="location-content">UCC</div></div>
+              </div>
+            </div><div class="fit"></div>
+            <div class="card">
+              <div class="card-content">
+                <div class="price-wrapper">
+                  <span class="badge badge-dark">Ghc 0.00</span>
+                </div>
+                <img class="masonry-item-image " src="assets/img/business.jpeg">
+                <div class="event-name">Event-Name</div>
+              </div>
+              <div class="card-footer">
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="10:00 am"><a class="card-icons" href=""><i data-feather="watch"></i></a><div class="time-content">6:00 am</div></div>
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="23rd Jan 1880"><a class="card-icons" href=""><i data-feather="calendar"></i></a><div class="calendar-content">23rd March</div></div>
+                  <div class="details-section col-lg-4" data-toggle="tooltip" data-placement="top" title="University of Cape Coast (Main auditorium)"><a class="card-icons" href=""><i data-feather="map-pin"></i></a><div class="location-content">UCC</div></div>
+              </div>
+            </div><div class="fit"></div>
+        </div>
+        <br>
+        <h4 class="h3">Categories</h4>
+        <div class="masonry">
+            <div class="item card cat-card">
+              <div class="card-content">
+                <img class="masonry-item-image" src="assets/img/business.jpeg">
+              </div>
+              <div class="cat-cover">
+                <p class="cat-krom">Kromevents</p>
+                <p class="cat-label">-----<br>Category</p>
+                <a href="#" class="cat-link">Check out</a>
+              </div>
+            </div>
+            
+            <div class="item card cat-card">
+              <div class="card-content">
+                <img class="masonry-item-image" src="assets/img/business.jpeg">
+              </div>
+              <div class="cat-cover">
+                <p class="cat-krom">Kromevents</p>
+                <p class="cat-label">-----<br>Category</p>
+                <a href="#" class="cat-link">Check out</a>
+              </div>
+            </div>
+            
+            <div class="item card cat-card">
+              <div class="card-content">
+                <img class="masonry-item-image" src="assets/img/business.jpeg">
+              </div>
+              <div class="cat-cover">
+                <p class="cat-krom">Kromevents</p>
+                <p class="cat-label">-----<br>Category</p>
+                <a href="#" class="cat-link">Check out</a>
+              </div>
+            </div>
+            
+            <div class="item card cat-card">
+              <div class="card-content">
+                <img class="masonry-item-image" src="assets/img/business.jpeg">
+              </div>
+              <div class="cat-cover">
+                <p class="cat-krom">Kromevents</p>
+                <p class="cat-label">-----<br>Category</p>
+                <a href="#" class="cat-link">Check out</a>
+              </div>
+            </div>
+            
+            <div class="item card cat-card">
+              <div class="card-content">
+                <img class="masonry-item-image" src="assets/img/business.jpeg">
+              </div>
+              <div class="cat-cover">
+                <p class="cat-krom">Kromevents</p>
+                <p class="cat-label">-----<br>Category</p>
+                <a href="#" class="cat-link">Check out</a>
+              </div>
+            </div>
+            
+            <div class="item card cat-card">
+              <div class="card-content">
+                <img class="masonry-item-image" src="assets/img/business.jpeg">
+              </div>
+              <div class="cat-cover">
+                <p class="cat-krom">Kromevents</p>
+                <p class="cat-label">-----<br>Category</p>
+                <a href="#" class="cat-link">Check out</a>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer container">
+        <div class="row">
+            <div class="col-sm-8 f1">
+                <div class="row">
+                    <div class="col">
+                        <h6>SUPPORT</h6>
+                        <a href="#">Help</a><br>
+                        <a href="#">S link 2</a><br>
+                        <a href="#">S link 3</a>
+                    </div>
+                    <div class="col">
+                        <h6>RESOURCES</h6>
+                        <a href="#">R link 1</a><br>
+                        <a href="#">R link 2</a><br>
+                        <a href="#">R link 3</a>
+                    </div>
+                    <div class="col">
+                        <h6>ABOUT</h6>
+                        <a href="#">A link 1</a><br>
+                        <a href="#">A link 2</a><br>
+                        <a href="#">A link 3</a>
+                    </div>
+                    <div class="col">
+                        <h6>CONNECT</h6>
+                        <a href="#">Contact us</a><br>
+                        <a href="#">Twitter</a><br>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 f1 f2">
+                <label class="text-uppercase">Join our newsletter</label>
+                <form class="form-inline navbar-search" id="">
+                    <div class="input-group" >
+       		           <input class="top-search form-control" type="text" placeholder="">
+       		           <a class="top-search-btn btn btn-primary"><img src="assets/img/search.svg"></a>
+       		        </div>
+    	       </form>
+            </div>
+        </div>
+    </div>
+    <div class="row copyright">
+        <p>&copy;2018 Asiders Inc</p>
+    </div>
+	<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.visible.min.js"></script>
+    <script src="assets/js/krome_.js"></script>
+    <script type="text/javascript">
+      var myVar = setInterval(timeoutnextbg, 10*1000);
+      pagescrolling();
+//      $("a.toscroll").on('click',function(e){
+//        var url = e.target.href;
+//        var hash=url.substring(url.indexOf("#")+1);
+//        $('html,body').animate({
+//          scrollTop: $('#'+hash).offset().top
+//        }, 2000);
+//        return false;
+//      });
+    </script>
+</body>
+</html>
