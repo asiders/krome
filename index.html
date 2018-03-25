@@ -10,13 +10,14 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/krome_.css">
+    <link rel="stylesheet" href="assets/css/social.css">
 </head>
 <body onresize="resized()" onscroll="pagescrolling()">
     
     <div id="sign-in"><br>
           <form class="form log-in-form" >
             <div class="login-wrapper">
-            <a href="#" class="float-right close-sign-in" onclick="hideSignin()">&times;</a>
+            <a href="#" class="float-right close-sign-in" onclick="hideSignin()"><i data-feather="x"></i></a>
             <h2>Sign in</h2>
             <div class="row">
               <div class="col">
@@ -47,7 +48,7 @@
     <div id="sign-up"><br>
           <form class="form log-in-form" >
             <div class="login-wrapper">
-            <a href="#" class="float-right close-sign-up" onclick="hideSignup()">&times;</a>
+            <a href="#" class="float-right close-sign-up" onclick="hideSignup()"><i data-feather="x"></i></a>
             <h2>Sign up</h2>
             <div class="row">
               <div class="col">
@@ -115,7 +116,7 @@
 		  <form class="form-inline navbar-search" id="search1">
         	<div class="input-group" >
            	<input class="top-search form-control" type="text" placeholder="Search events">
-        	<a class="top-search-btn btn btn-primary"><img src="assets/img/search.svg"></a>
+        	<a class="top-search-btn btn btn-primary"><i class="i-white" data-feather="search"></i></a>
         	</div>
           </form>
           <!-- NAV LINKS ON DESKTOP NAVBAR -->
@@ -134,7 +135,7 @@
 		<form class="form-inline navbar-search" id="search2">
        		<div class="input-group" >
        		<input class="top-search form-control" type="text" placeholder="Search events">
-       		<a href="" class="top-search-btn btn btn-primary"><img src="assets/img/search.svg"></a>
+       		<a href="" class="top-search-btn btn btn-primary"><i class="i-white" data-feather="search"></i></a>
        		</div>
     	</form>
     </div>
@@ -174,7 +175,77 @@
         </section>
         </div>
     </header>
+    
     <div class="page-wrapper container">
+        <h4 class="h3">Categories</h4>
+        <div class="masonry">
+            <div class="item card cat-card">
+              <div class="card-content">
+                <img class="masonry-item-image" src="assets/img/business.jpeg">
+              </div>
+              <div class="cat-cover">
+                <p class="cat-krom">Kromevents</p>
+                <p class="cat-label">-----<br>Category</p>
+                <a href="#" class="cat-link">Check out</a>
+              </div>
+            </div>
+            
+            <div class="item card cat-card">
+              <div class="card-content">
+                <img class="masonry-item-image" src="assets/img/business.jpeg">
+              </div>
+              <div class="cat-cover">
+                <p class="cat-krom">Kromevents</p>
+                <p class="cat-label">-----<br>Category</p>
+                <a href="#" class="cat-link">Check out</a>
+              </div>
+            </div>
+            
+            <div class="item card cat-card">
+              <div class="card-content">
+                <img class="masonry-item-image" src="assets/img/business.jpeg">
+              </div>
+              <div class="cat-cover">
+                <p class="cat-krom">Kromevents</p>
+                <p class="cat-label">-----<br>Category</p>
+                <a href="#" class="cat-link">Check out</a>
+              </div>
+            </div>
+            
+            <div class="item card cat-card">
+              <div class="card-content">
+                <img class="masonry-item-image" src="assets/img/business.jpeg">
+              </div>
+              <div class="cat-cover">
+                <p class="cat-krom">Kromevents</p>
+                <p class="cat-label">-----<br>Category</p>
+                <a href="#" class="cat-link">Check out</a>
+              </div>
+            </div>
+            
+            <div class="item card cat-card">
+              <div class="card-content">
+                <img class="masonry-item-image" src="assets/img/business.jpeg">
+              </div>
+              <div class="cat-cover">
+                <p class="cat-krom">Kromevents</p>
+                <p class="cat-label">-----<br>Category</p>
+                <a href="#" class="cat-link">Check out</a>
+              </div>
+            </div>
+            
+            <div class="item card cat-card">
+              <div class="card-content">
+                <img class="masonry-item-image" src="assets/img/business.jpeg">
+              </div>
+              <div class="cat-cover">
+                <p class="cat-krom">Kromevents</p>
+                <p class="cat-label">-----<br>Category</p>
+                <a href="#" class="cat-link">Check out</a>
+              </div>
+            </div>
+        </div>
+        <br>
         <h4 class="h3">Featured Events</h4>
         <div class="masonry">
             <div class="card">
@@ -266,120 +337,82 @@
               </div>
             </div><div class="fit"></div>
         </div>
-        <br>
-        <h4 class="h3">Categories</h4>
-        <div class="masonry">
-            <div class="item card cat-card">
-              <div class="card-content">
-                <img class="masonry-item-image" src="assets/img/business.jpeg">
-              </div>
-              <div class="cat-cover">
-                <p class="cat-krom">Kromevents</p>
-                <p class="cat-label">-----<br>Category</p>
-                <a href="#" class="cat-link">Check out</a>
-              </div>
-            </div>
-            
-            <div class="item card cat-card">
-              <div class="card-content">
-                <img class="masonry-item-image" src="assets/img/business.jpeg">
-              </div>
-              <div class="cat-cover">
-                <p class="cat-krom">Kromevents</p>
-                <p class="cat-label">-----<br>Category</p>
-                <a href="#" class="cat-link">Check out</a>
-              </div>
-            </div>
-            
-            <div class="item card cat-card">
-              <div class="card-content">
-                <img class="masonry-item-image" src="assets/img/business.jpeg">
-              </div>
-              <div class="cat-cover">
-                <p class="cat-krom">Kromevents</p>
-                <p class="cat-label">-----<br>Category</p>
-                <a href="#" class="cat-link">Check out</a>
-              </div>
-            </div>
-            
-            <div class="item card cat-card">
-              <div class="card-content">
-                <img class="masonry-item-image" src="assets/img/business.jpeg">
-              </div>
-              <div class="cat-cover">
-                <p class="cat-krom">Kromevents</p>
-                <p class="cat-label">-----<br>Category</p>
-                <a href="#" class="cat-link">Check out</a>
-              </div>
-            </div>
-            
-            <div class="item card cat-card">
-              <div class="card-content">
-                <img class="masonry-item-image" src="assets/img/business.jpeg">
-              </div>
-              <div class="cat-cover">
-                <p class="cat-krom">Kromevents</p>
-                <p class="cat-label">-----<br>Category</p>
-                <a href="#" class="cat-link">Check out</a>
-              </div>
-            </div>
-            
-            <div class="item card cat-card">
-              <div class="card-content">
-                <img class="masonry-item-image" src="assets/img/business.jpeg">
-              </div>
-              <div class="cat-cover">
-                <p class="cat-krom">Kromevents</p>
-                <p class="cat-label">-----<br>Category</p>
-                <a href="#" class="cat-link">Check out</a>
-              </div>
-            </div>
-        </div>
     </div>
-    <div class="footer container">
-        <div class="row">
-            <div class="col-sm-8 f1">
-                <div class="row">
-                    <div class="col">
-                        <h6>SUPPORT</h6>
-                        <a href="#">Help</a><br>
-                        <a href="#">S link 2</a><br>
-                        <a href="#">S link 3</a>
-                    </div>
-                    <div class="col">
-                        <h6>RESOURCES</h6>
-                        <a href="#">R link 1</a><br>
-                        <a href="#">R link 2</a><br>
-                        <a href="#">R link 3</a>
-                    </div>
-                    <div class="col">
-                        <h6>ABOUT</h6>
-                        <a href="#">A link 1</a><br>
-                        <a href="#">A link 2</a><br>
-                        <a href="#">A link 3</a>
-                    </div>
-                    <div class="col">
-                        <h6>CONNECT</h6>
-                        <a href="#">Contact us</a><br>
-                        <a href="#">Twitter</a><br>
-                        <a href="#">Facebook</a>
-                    </div>
+    
+        <div class="_container">
+            <div class="footer">
+                <div class="col-sm-4">
+                    <h6>GETTING STARTED</h6>
+                    <a href="#">Join Kromevents</a><br>
+                    <a href="#">Create Event</a><br>
+                    <a href="#">Browse Events</a>
+                </div>
+                <div class="col-sm-4">
+                    <h6>RESOURCES</h6>
+                    <a href="#">Spread the Word</a><br>
+                    <a href="#">Support Center</a><br>
+                    <a href="#">F A Q</a>
+                </div>
+                <div class="col-sm-4">
+                    <h6>ABOUT</h6>
+                    <a href="#">How it works</a><br>
+                    <a href="#">Pricing</a><br>
+                    <a href="#">Our Ethics</a>
                 </div>
             </div>
-            <div class="col-sm-4 f1 f2">
-                <label class="text-uppercase">Join our newsletter</label>
-                <form class="form-inline navbar-search" id="">
-                    <div class="input-group" >
-       		           <input class="top-search form-control" type="text" placeholder="">
-       		           <a class="top-search-btn btn btn-primary"><img src="assets/img/search.svg"></a>
-       		        </div>
-    	       </form>
-            </div>
+            <ul class="_accordion">
+                <li class="tab">
+                    <div class="social youtube">
+                        <a href="#" target="_blank"></a>
+                    </div>
+                    <div class="content">
+                        <h1>Youtube</h1>
+                        <p>Follow us on Youtube for exciting moments captured in some of our events</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <div class="social twitter">
+                        <a href="#" target="_blank"></a>
+                    </div>
+                    <div class="content">
+                        <h1>Twitter</h1>
+                        <p>Follow us on Twitter for exciting moments captured in some of our events</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <div class="social facebook">
+                       <a href="#" target="_blank"></a>
+                    </div>
+                    <div class="content">
+                        <h1>Facebook</h1>
+                        <p>Follow us on Facebook for exciting moments captured in some of our events</p>
+                   </div>
+                </li>
+                <li class="tab">
+                    <div class="social instagram">
+                        <a href="#" target="_blank"></a>
+                    </div>
+                    <div class="content">
+                        <h1>Instagram</h1>
+                        <p>Follow us on Instagram for exciting moments captured in some of our events</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <div class="social github">
+                        <a href="#" target="_blank"></a>
+                    </div>
+                    <div class="content">
+                        <h1>Github</h1>
+                        <p>Follow us on Github for exciting moments captured in some of our events</p>
+                    </div>
+                </li>
+            </ul>
+            
+            <p class="copyright">&copy;2018 Asiders Inc</p>
         </div>
-    </div>
-    <div class="row copyright">
-        <p>&copy;2018 Asiders Inc</p>
-    </div>
+  <div class="mobile-footer">
+      <p class="copyright">&copy;2018 Asiders Inc</p>
+  </div>
 	<script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
