@@ -424,7 +424,9 @@ html, body{
     z-index: 100;
 }
 .badge{/*Price  on cards*/
-
+    background-color: #EF7F2E;
+    color: white;
+    font-weight: bold;
 }
 .card-content{
     margin: 0;
