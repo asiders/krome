@@ -14,12 +14,12 @@
         <div class="navigation_bar">
             <div class="navigation_body">
                 <div class="navbar_logo_left nav_child">
-                        <a href="home" class=""><h1 class="brand">Krom <span>events</span></h1></a>
+                        <a href="home" class=""><h1 class="brand">Krom <span>Events</span></h1></a>
                 </div>
                 <div class="navbar_link_center nav_child">
                     <div class="navbar-login-others">
-                        <ul class="navbar-links"><li class="link_items"><a href="#Log-in" class="link">Log in</a></li>
-                            <li class="link_items"><a href="" class="link">Create An Event</a></li>
+                        <ul class="navbar-links"><li class="link_items"><a href="#Log-in" class="link" onclick="showlogin()">Log in</a></li>
+                            <li class="link_items"><a href="" class="link">Join us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -28,12 +28,12 @@
                         <input type="text" placeholder="Search events" class="search_input"/>
                         <button class="search_btn"><i data-feather="search"></i></button>
                     </form>
+
                 </div>
             </div>
         </div>
     </div>
     <div class="nav_wrap sticky-top">
-        <div>
             <div class="navigations">
                 <div class="mobile_login d-none">
                     Mobiles log in here
@@ -61,10 +61,22 @@
                             <a class="dropdown-item" href="#">Link 3</a>
                         </div>
                     </li>
+                    <a class="create_event_btn" href="createevent.html">Create An Event Here</a>
                 </ul>
-                <a class="create_event_btn" href="createevent.html">Create An Event Here</a>
             </div>
-        </div>
+    </div>
+    <div class="log_in_wrap">
+        <div class="log_in_body">
+            <form class="login_form" action="">
+                <input class="login_in" type="email" placeholder="email">
+                <input class="login_in" type="password" placeholder="password">
+                <span class="login_in">
+                    <label><input type="checkbox"> Remember me</label>
+                    <input class="login_sub" type="submit" value="login">
+                </span>
+                <a onclick="hidelogin()" title="hide login widget" class="login_hide" href="#"><i data-feather="chevrons-up"></i></a>
+            </form>
+        </div>        
     </div>
     <div class="site_section">
         <div class="section_tiles_wrap">

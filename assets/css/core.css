@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Ruluko|Text+Me+One&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 *{
     margin:0;
     padding: 0;
@@ -8,13 +9,15 @@
     /* background-color: beige; */
 }
 html, body{
-    font: 1rem 'Text Me One', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    /* font-family: 1rem 'Open Sans', sans-serif; */
+    /* font: 1rem 'Text Me One', sans-serif; */
     /* height: 200%; */
     background-color: #e8e8e8; 
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Ruluko', sans-serif;
+    font-family: 'Pacifico', cursive;
 }
 a{
     color: #630480;
@@ -27,10 +30,11 @@ a:hover {
  }
 .brand{
     white-space: nowrap;
-    padding-left: 25px;
     color: white;
     text-shadow: 2px 2px #550070;
+    font-size: 50px;
     font-weight: bold;
+    font-family: 'Pacifico', cursive;
 }
 .brand span{
     text-shadow: 2px 2px #EF7F2E;
@@ -53,7 +57,7 @@ a:hover {
 }
 .navigation_body{
     height: 94px;
-    background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 76%),linear-gradient(90deg,#EF7F2E 0,#EF7F2E 119px,#630480 0,#630480);
+    background-image: linear-gradient(0deg,rgba(0,0,0,.3),transparent 76%),linear-gradient(90deg,#EF7F2E 0,#EF7F2E 138px,#630480 0,#630480);
     background-origin: content-box;
     background-repeat: no-repeat;
 
@@ -171,13 +175,23 @@ a:hover {
 }
 .navigations{
     height: 52px;
+    /* background-color: plum; */
     text-align: center;
 }
 .nav_d_wrap{
-    display: inline-block;
+    display: flex;
+   
     list-style: none;
     white-space: nowrap;
-    padding: 0;
+    padding: 0; justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: 1024px;
+    /* background-color: rebeccapurple;    */
+    height: 100%;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 22px;
 }
 .nav_d_items{
     display: inline-block;
@@ -187,6 +201,7 @@ a:hover {
     cursor: pointer;
     margin-right: 15px;
     padding: auto;
+    font-weight: bold;
 }
 .create_event_btn{
     -webkit-appearance: none;
@@ -206,10 +221,7 @@ a:hover {
 
     /* 2nd */
     overflow: hidden;
-    position: relative;
-    margin-top: 5px;
-    float: right;
-    margin-right: 10px;
+    font-weight: bold;
 }
 .create_event_btn:hover{
     color: #630480;
@@ -217,6 +229,67 @@ a:hover {
 }
 .dropdown-item{
     color: #630480;
+    font-weight: bold;
+}
+.log_in_wrap{
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    height: 200px;
+    margin: 0;
+    margin-top: -250px;
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.log_in_body{
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 1px 15px rgba(0,0,0,.14);
+    
+}
+.login_form{
+    /* background-color: violet; */
+    display: block;
+    padding: 20px;
+    height: 100%;
+    position: relative;
+}
+.login_in{
+    height: 40px;
+    width: 80%;
+    display: block;
+    margin:auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border:1px solid #46025a;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    outline: none;
+    /* margin-top: 10px; */
+}
+.login_form span{
+    border: 0;
+}
+.login_sub{
+    height: 40px;
+    width: 40%;
+    margin-left: 20px;
+    background-color: #EF7F2E;
+    border:1px solid #EF7F2E;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login_hide{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
 }
 /* END OF NAVIGATION CSS */
 

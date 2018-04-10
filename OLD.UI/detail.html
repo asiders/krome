@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Discover all your events in one place. Buy tickets, create events and use advance tools to plan the organization of your events.">
+
+    <title>Kromevents | Landing Page</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/krome_.css">
+    <link rel="stylesheet" href="assets/css/social.css">
+    <link rel="stylesheet" href="assets/css/detail.css">
+</head>
+<body onresize="resized()" onscroll="pagescrolling()">
+    
+    <div id="sign-in"><br>
+          <form class="form log-in-form" >
+            <div class="login-wrapper">
+            <a href="#" class="float-right close-sign-in" onclick="hideSignin()"><i data-feather="x"></i></a>
+            <h2>Sign in</h2>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" type="email" />
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input class="form-control" type="password"/>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value=""> Remember me
+                </label>
+              </div><br>
+              <input class="btn-primary sign-btn" type="submit" value="Submit"> 
+              <a class="sign-alt" href="#" onclick="showSignup()">Don't have an account?</a>
+              </div>
+              </div>
+            </div>
+              <div class="left-shadow"></div>
+              <div class="right-shadow"></div>
+              <div class="cover-shadow"></div>
+              
+          </form>
+    </div>
+    <div id="sign-up"><br>
+          <form class="form log-in-form" >
+            <div class="login-wrapper">
+            <a href="#" class="float-right close-sign-up" onclick="hideSignup()"><i data-feather="x"></i></a>
+            <h2>Sign up</h2>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                    <label>Full-Name</label>
+                    <input class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control" type="email" />
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input class="form-control" type="password"/>
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input class="form-control" type="password"/>
+                </div>
+<!--                <button class=""></button>-->
+                <input class="btn btn-primary sign-btn" type="submit" value="Submit"> 
+                <a class="sign-alt" href="#" onclick="showSignin()">Already have an account?</a>
+              </div>
+              </div>
+            </div>
+              <div class="left-shadow"></div>
+              <div class="right-shadow"></div>
+<!--              <div class="cover-shadow"></div>-->
+              
+          </form>
+    </div>
+    
+
+    
+    <!-- NAV LINKS ON MOBILES MENU -->
+      <div class="dropper">
+      		<ul class="navbar-nav text-uppercase" id="navigation">
+        		<li class="top-links nav-item"><a class="nav-link" href="browse-events.html"  class="nav-link">Browse Events</a></li>
+        		<li class="top-links nav-item"><a class="nav-link" href="#" onclick="showSignin()"><span>Sign in </span> <i data-feather="user"></i></a></li>
+        		<li class="top-links create-event nav-item" ><a href="create-event.html" class="create-event btn btn-outline-primary btn-sm">Create Events</a></li>
+      		</ul>
+      </div>
+	<div class="navbar" id="navbar">
+	  <a class="navbar-brand" href="#"><img src="assets/img/Kromevents5_1.svg" alt=""></a>
+        
+        
+        
+        
+	  <div class="navbar-right-div">
+          <!-- SEARCH BAR ON THE NAVBAR -->
+		  <form class="form-inline navbar-search" id="search1">
+        	<div class="input-group" >
+           	<input class="top-search form-control" type="text" placeholder="Search events">
+        	<a class="top-search-btn btn btn-primary"><i class="i-white" data-feather="search"></i></a>
+        	</div>
+          </form>
+          <!-- NAV LINKS ON DESKTOP NAVBAR -->
+          <div>
+      		<ul class="navbar-nav text-uppercase" >
+        		<li class="top-links nav-item"><a class="nav-link" href="browse-events.html"  class="nav-link">Browse Events</a></li>
+        		<li class="top-links nav-item"><a onclick="showSignin()" class="nav-link" href="#"><span>Sign in </span></a></li>
+        		<li class="top-links create-event nav-item" ><a href="create-event.html" class="create-event btn btn-outline-primary btn-sm">Create Events</a></li>
+      		</ul>
+          </div>
+      </div>
+      <button onclick="showmenu()" class="btn btn-primary" type="button" id="toogle-navbar"><i data-feather="menu"></i></button>
+    </div>
+		<!-- SEARCH BAR BELLOW THE NAVBAR -->
+	<div class="container search-below-navbar">
+		<form class="form-inline navbar-search" id="search2">
+       		<div class="input-group" >
+       		<input class="top-search form-control" type="text" placeholder="Search events">
+       		<a href="" class="top-search-btn btn btn-primary"><i class="i-white" data-feather="search"></i></a>
+       		</div>
+    	</form>
+    </div>
+    <div class="detail-wrapper">
+        <div class="detail-img" style="background:white url('assets/img/banner.png') no-repeat center ;background-size:cover;">
+            <div class="price-wrapper">
+                <span class="badge">Ghc 0.00</span>
+                <span class="badge">Ghc 0.00</span>
+                <span class="badge">Ghc 0.00</span>
+            </div>
+            <div class="puchase-wrapper">
+                <a href="#" class="btn">Ticket</a>
+            </div>
+        </div>
+        <div class="important-detail">
+            <h2>Urantia Ghana International Conference 2018</h2>
+            <div class="date-time">
+                <div class="date">
+                    <i data-feather="calendar"></i> <h4> Fri, Apr 20</h4>
+                </div>
+                <div class="time">
+                    <i data-feather="watch"></i><h4> 17:00 / 5:00 pm</h4>
+                </div>
+                <div class="location">
+                    <i data-feather="map-pin"></i><h4> Azure Hotel</h4>
+                </div>
+            </div>
+            <h5 class="e-start-in">Event starts in</h5>
+            <!-- INSERT SECONDS TO EVENT INTO THE SPAN -->
+            <span id="seconds-to-event" class="d-none">172601</span>
+            <div id='counter' class="time-remaining">
+                <div class="r-section">
+                    <h5>Day(s)</h5><p id="r-day">00</p>
+                </div>
+                <div class="r-section">
+                    <h5>Hour(s)</h5><p id="r-hour">00</p>
+                </div>
+                <div class="r-section">
+                    <h5>Min(s)</h5><p id="r-min">00</p>
+                </div>
+                <div class="r-section">
+                    <h5>Sec(s)</h5><p id="r-sec">00</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <h3 class="detail-head">Description</h3>
+            <p class="detail-content">Health and Curls is a yearly event aimed at tackling natural hair, diet and general maternal and mens health issues. This years topics include maternal and fetal Health, losing baby weight, contraceptives, facts you need to know as a woman, the effects of diet on several illnesses, topics related to hair, etc. There will be lots of vendors, giveaways, good food, great music, etc Sign up for free and come spend a day with us. It will be worth your while. Early birds get served breakfast. To make any enquiries about vending, kindly email us at healthandcurlsgh@centrum.cz or whatsapp or call +420776693735 /+23324787751 See ya </p>      
+            <h3 class="detail-head">FAQs</h3>
+            <p class="detail-content">
+                <h5 class="question">What are my transportation/parking options for getting to and from the event?</h5>
+                <p class="answers">To get to the osu presby Hall, you just need to get into a car heading to Osu. All public buses pass right beside the Ebenezer Presby Church, which is where you will be getting off. There is a huge car park should you need to park your car in the premises of the church. </p>
+                <h5 class="question">What can I bring into the event?</h5>
+                <p class="answers">You dont need to bring any items to the event. Should you want to do some shopping, money will definitely be needed :) </p>
+                <h5 class="question">How can I contact the organizer with any questions?</h5>
+                <p class="answers">You can reach the organizers via email ( healthandcurlsgh@centrum.cz ) or call / whatsapp +420776693735 (Avery) , 0247877551 (Theo)</p>
+                <h5 class="question">Do I have to bring my printed ticket to the event?</h5>
+                <p class="answers">You dont need to print your ticket. Its enough to show up at the registration table.  </p>
+                <h5 class="question">Any giveaways? </h5>
+                <p class="answers">Early birds get served hot chocolate and waffles.<br>Every attendee is entitled to enter the draw to win lots of amazing gifts. </p>
+            </p>
+            <!-- <h3 class="detail-head">Description</h3>
+            <p class="detail-content"></p>
+            <h3 class="detail-head">Description</h3>
+            <p class="detail-content"></p>
+            <h3 class="detail-head">Description</h3>
+            <p class="detail-content"></p> -->
+        </div>
+    </div>
+   
+        <div class="_container">
+            <div class="footer">
+                <div class="col-sm-4">
+                    <h6>GETTING STARTED</h6>
+                    <a href="#">Join Kromevents</a><br>
+                    <a href="#">Create Event</a><br>
+                    <a href="#">Browse Events</a>
+                </div>
+                <div class="col-sm-4">
+                    <h6>RESOURCES</h6>
+                    <a href="#">Spread the Word</a><br>
+                    <a href="#">Support Center</a><br>
+                    <a href="#">F A Q</a>
+                </div>
+                <div class="col-sm-4">
+                    <h6>ABOUT</h6>
+                    <a href="#">How it works</a><br>
+                    <a href="#">Pricing</a><br>
+                    <a href="#">Our Ethics</a>
+                </div>
+            </div>
+            <ul class="_accordion">
+                <li class="tab">
+                    <div class="social youtube">
+                        <a href="#" target="_blank"></a>
+                    </div>
+                    <div class="content">
+                        <h1>Youtube</h1>
+                        <p>Follow us on Youtube for exciting moments captured in some of our events</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <div class="social twitter">
+                        <a href="#" target="_blank"></a>
+                    </div>
+                    <div class="content">
+                        <h1>Twitter</h1>
+                        <p>Follow us on Twitter for exciting moments captured in some of our events</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <div class="social facebook">
+                       <a href="#" target="_blank"></a>
+                    </div>
+                    <div class="content">
+                        <h1>Facebook</h1>
+                        <p>Follow us on Facebook for exciting moments captured in some of our events</p>
+                   </div>
+                </li>
+                <li class="tab">
+                    <div class="social instagram">
+                        <a href="#" target="_blank"></a>
+                    </div>
+                    <div class="content">
+                        <h1>Instagram</h1>
+                        <p>Follow us on Instagram for exciting moments captured in some of our events</p>
+                    </div>
+                </li>
+                <li class="tab">
+                    <div class="social github">
+                        <a href="#" target="_blank"></a>
+                    </div>
+                    <div class="content">
+                        <h1>Github</h1>
+                        <p>Follow us on Github for exciting moments captured in some of our events</p>
+                    </div>
+                </li>
+            </ul>
+            
+            <p class="copyright">&copy;2018 Asiders Inc</p>
+        </div>
+  <div class="mobile-footer">
+      <p class="copyright">&copy;2018 Asiders Inc</p>
+  </div>
+	<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.visible.min.js"></script>
+    <script src="assets/js/krome_.js"></script>
+    <script type="text/javascript">
+      pagescrolling();
+    </script>
+    <script>
+        var upgradeTime =document.getElementById('seconds-to-event').innerHTML ;
+        var seconds = upgradeTime;
+        function timer() {
+            var days        = Math.floor(seconds/24/60/60);
+            var hoursLeft   = Math.floor((seconds) - (days*86400));
+            var hours       = Math.floor(hoursLeft/3600);
+            var minutesLeft = Math.floor((hoursLeft) - (hours*3600));
+            var minutes     = Math.floor(minutesLeft/60);
+            var remainingSeconds = seconds % 60;
+            if (remainingSeconds < 10) {
+                remainingSeconds = "0" + remainingSeconds; 
+            }
+            document.getElementById('r-day').innerHTML = days;
+            document.getElementById('r-hour').innerHTML = hours;
+            document.getElementById('r-min').innerHTML = minutes;
+            document.getElementById('r-sec').innerHTML = remainingSeconds;
+            if (seconds == 0) {
+                clearInterval(countdownTimer);
+                document.getElementById('r-day').innerHTML = '00';
+            document.getElementById('r-hour').innerHTML = '00';
+            document.getElementById('r-min').innerHTML = '00';
+            document.getElementById('r-sec').innerHTML = '00';
+            } else {
+                seconds--;
+            }
+        }
+        var countdownTimer = setInterval('timer()', 1000);
+        </script>
+</body>
+</html>

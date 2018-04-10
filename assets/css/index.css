@@ -34,7 +34,7 @@
     margin-top: 30px;
     /* margin-bottom: 5px; */
     column-count: 3;
-    max-height: 250px;
+    max-height: 300px;
     /* padding: 20px; */
     /* border: 2px solid black; */
 }
@@ -56,8 +56,8 @@
 .tile_items_3{
     width:100%;
     display: inline-block;
-    height: 230px;
-    min-height: 230px;
+    height: 300px;
+    min-height: 300px;
     /* background-color: blue; */
     box-shadow: 1px 1px 2px rgba(0,0,0,.9);
 }
@@ -85,6 +85,7 @@
     border-right-style: groove;
     text-align: center;
     padding: 5px;
+    background-color: white;
 }
 .im_v{
     position: absolute;
@@ -114,6 +115,7 @@
     text-align: center;
     padding: 5px;
     line-height: 17px;
+    background-color: white;
     /* float: left; */
 }
 .im_h{
