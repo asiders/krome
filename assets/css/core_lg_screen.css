@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@media only screen and (min-width: 900px) {
+    ._accordion{
+        display: block;
+    }
+    .sons{
+        display: none;
+    }
+    
+    .hons{
+        display: inline-block;
+    }
+    .navbar_link_center{
+        margin-top: 13px;
+        display: block;
+        white-space: nowrap;
+        text-align: right;
+        height: 100%;
+        /* background-color: rebeccapurple; */
+
+    }
+    .site_search{
+        display: block;
+        position: relative;
+    }
+    .mob_login_wrap{
+        display: none;
+    }
+    .menu_btn{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        margin-left: 50%;
+        /* margin: 0; */
+        padding-top: 20px;
+        height: 200px;
+        
+    }
+}

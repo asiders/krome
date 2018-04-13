@@ -1,0 +1,119 @@
+@media only screen and (min-width: 1200px) {
+    .section_tiles_wrap{
+        width: 70%;
+    }
+    .tile_row_1pr{
+        column-gap: 40px;
+        /* overflow: hidden; */
+        margin-top: 30px;
+        column-count: 1;
+        /* height: 400px; */
+        padding-right: 4px;
+    }
+    .tile_row_2pr{
+        column-gap: 40px;
+        /* overflow: hidden; */
+        margin-top: 30px;
+        column-count: 2;
+        height: 400px;
+        padding-right: 4px;
+        
+    }
+    .tile_row_3pr{
+        column-gap: 40px;
+        /* overflow: hidden; */
+        margin-top: 30px;
+        column-count: 3;
+        /* height: 400px; */
+        padding-right: 4px;
+    }
+    .tile_items_1{
+        width:100%;
+        display: inline-block;
+        height: 390px;
+        min-height: 390px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.15);
+    }
+    .tile_items_2{
+        width:100%;
+        display: inline-block;
+        height: 390px;
+        min-height: 390px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.15);
+    }
+    .tile_items_3{
+        width:100%;
+        display: inline-block;
+        height: 390px;
+        min-height: 390px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.15);
+    }
+    
+    .image_v{
+        position: relative;
+        width: 70%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        float: left;
+    }
+    .image_h{
+        position: relative;
+        width: 100%;
+        height: 70%;
+        overflow: hidden;
+        margin: 0;
+        /* float: left; */
+    }
+    .content_v{
+        margin: 0;
+        width: 30%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        line-height: 17px;
+        background-color: white;
+    }
+    .content_h{
+        /* background-color: aqua; */
+       
+        /* float: left; */
+    }
+    .im_v{
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+    .im_h{
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+    .event-title{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .skipper1{
+        display: inline-block;
+    }
+    .skipper2{
+        display: none;
+    }
+    
+    .tile_row_3pr_noexpand{
+        height: 400px;
+    }
+    .tile_row_3pr_expand{
+        height: 400px;
+    }
+    .pad_down{
+        margin-bottom: 0px;
+    }
+}

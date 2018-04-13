@@ -6,8 +6,16 @@
     <title>Kromevents</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/core.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/core_sm_screen.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/core_md_screen.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/core_lg_screen.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/core_xlg_screen.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/core.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index_sm_screen.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index_md_screen.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index_lg_screen.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index_xlg_screen.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index.css" /> -->
 </head>
 <body>
     <div class="navigation_wrapper">
@@ -18,7 +26,8 @@
                 </div>
                 <div class="navbar_link_center nav_child">
                     <div class="navbar-login-others">
-                        <ul class="navbar-links"><li class="link_items"><a href="#Log-in" class="link" onclick="showlogin()">Log in</a></li>
+                        <ul class="navbar-links">
+                            <li class="link_items"><a href="#Log-in" class="link" onclick="showlogin()">Log in</a></li>
                             <li class="link_items"><a href="" class="link">Join us</a></li>
                         </ul>
                     </div>
@@ -28,21 +37,34 @@
                         <input type="text" placeholder="Search events" class="search_input"/>
                         <button class="search_btn"><i data-feather="search"></i></button>
                     </form>
-
+                    <button class="menu_btn" onclick="show_mob_login()"><i data-feather="menu"></i></button>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="mob_login_wrap">
+        <div class="mob_login">
+            <ul class="mob_navbar-links">
+                <li class="mob_link_items"><a href="#Log-in" class="link" onclick="showlogin()">Log in</a></li>
+                <li class="mob_link_items"><a href="#" onclick="hide_mob_sidenav()" class="link">Join us</a></li>
+            </ul>
+            <div class="navbar_search_end">
+                <form action="" class="mob_site_search">
+                <input type="text" placeholder="Search events" class="search_input"/>
+                    <button class="search_btn"><i data-feather="search"></i></button>
+                    <p hidden id="login_toogle">0</p>
+                </form>
             </div>
         </div>
     </div>
     <div class="nav_wrap sticky-top">
             <div class="navigations">
-                <div class="mobile_login d-none">
-                    Mobiles log in here
-                </div>
                 <ul class="nav_d_wrap">
                     <li class="nav_d_items"><a href="1">Item</a></li>
                     <li class="nav_d_items"><a href="2">Item</a></li>
                     <li class="nav_d_items"><a href="3">Item</a></li>
-                    <li class="nav_d_items dropdown">
+                    <li class="nav_d_items"><a href="4">Item</a></li>
+                    <li class="nav_d_items dropdown hons">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Link 1</a>
@@ -50,18 +72,43 @@
                             <a class="dropdown-item" href="#">Link 3</a>
                         </div>
                     </li>
-                    <li class="nav_d_items"><a href="1">Item</a></li>
-                    <li class="nav_d_items"><a href="2">Item</a></li>
-                    <li class="nav_d_items"><a href="3">Item</a></li>
-                    <li class="nav_d_items dropdown dropdown-arrow">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" class="dropdown_arrow">Dropdown</a>
+                    <li class="nav_d_items hons"><a href="1">Item A</a></li>
+                    <li class="nav_d_items hons"><a href="2">Item B</a></li>
+                    <li class="nav_d_items hons" ><a href="3">Item C</a></li>
+                    <li class="nav_d_items dropdown dropdown-arrow hons">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" class="dropdown_arrow">Dropdown D</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="#">Link 1</a>
                             <a class="dropdown-item" href="#">Link 2</a>
                             <a class="dropdown-item" href="#">Link 3</a>
                         </div>
                     </li>
-                    <a class="create_event_btn" href="createevent.html">Create An Event Here</a>
+                    <li class="nav_d_items dropdown dropdown-arrow sons">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" class="dropdown_arrow">More</a>
+                        <ul class="dropdown-menu  dropdown-menu-left">
+                            <li class="dropdown-submenu">
+                                <a class="test dropdown-toggle" data-toggle="dropdown" href="#asdf">Dropdown1</a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a class="dropdown-item" href="#">Link -1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link -2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link -3</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Link 1</a></li>
+                            <li><a class="dropdown-item" href="#">Link 2</a></li>
+                            <li><a class="dropdown-item" href="#">Link 3</a></li>
+                            <li class="dropdown-submenu dropdown-menu-right">
+                                <a class="test dropdown-toggle" data-toggle="dropdown" href="#asdf">Dropdown1</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Link -1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link -2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link -3</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="create_event_btn create_event_btn_smin" href="createevent.html">Create An Event Here</a></li>
+                        </ul>
+                    </li>
+                    <a class="create_event_btn hons" href="createevent.html">Create An Event Here</a>
                 </ul>
             </div>
     </div>
@@ -91,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tile_row_3pr">
+            <div class="tile_row_3pr tile_row_3pr_noexpand">
                 <div class="tile_items_3 ">
                     <div class="image_h" style="background: url('assets/img/chicago.jpg') no-repeat center center;">
                         <!-- <img class="im_h" src="assets/img/chicago.jpg"> -->
@@ -110,7 +157,45 @@
                     	<p class="event-title">Urantia Ghana Internation Conference</p>
                     </div>
                 </div>
+                <div class="tile_items_3 skipper1">
+                    <div class="image_h" style="background: url('assets/img/chicago.jpg') no-repeat center center;">
+                        <!-- <img class="im_h" src="assets/img/chicago.jpg"> -->
+                    </div>
+                    <div class="content_h">
+                        <p>Fri, April 20. 17:00</p>
+                    	<p class="event-title">CONS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tile_row_3pr tile_row_3pr_expand">
+                <div class="tile_items_2  skipper2 pad_down">
+                    <div class="image_h" style="background: url('assets/img/chicago.jpg') no-repeat center center;">
+                        <!-- <img class="im_h" src="assets/img/chicago.jpg"> -->
+                    </div>
+                    <div class="content_h">
+                        <p>Fri, April 20. 17:00</p>
+                    	<p class="event-title">CONS</p>
+                    </div>
+                </div>
                 <div class="tile_items_3 ">
+                    <div class="image_h" style="background: url('assets/img/chicago.jpg') no-repeat center center;">
+                        <!-- <img class="im_h" src="assets/img/chicago.jpg"> -->
+                    </div>
+                    <div class="content_h">
+                        <p>Fri, April 20. 17:00</p>
+                    	<p class="event-title">Urantia Ghana Internation Conference</p>
+                    </div>
+                </div>
+                <div class="tile_items_3 pad_down">
+                    <div class="image_h" style="background: url('assets/img/chicago.jpg') no-repeat center center;">
+                        <!-- <img class="im_h" src="assets/img/chicago.jpg"> -->
+                    </div>
+                    <div class="content_h">
+                        <p>Fri, April 20. 17:00</p>
+                    	<p class="event-title">Urantia Ghana Internation Conference</p>
+                    </div>
+                </div>
+                <div class="tile_items_3">
                     <div class="image_h" style="background: url('assets/img/chicago.jpg') no-repeat center center;">
                         <!-- <img class="im_h" src="assets/img/chicago.jpg"> -->
                     </div>
@@ -155,19 +240,19 @@
     </div>
     <div class="_container">
         <div class="footer">
-            <div class="col-sm-4">
+            <div class="col-sm-4 ft">
                 <h6>GETTING STARTED</h6>
                 <a href="#">Join Kromevents</a><br>
                 <a href="#">Create Event</a><br>
                 <a href="#">Browse Events</a>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 ft">
                 <h6>RESOURCES</h6>
                 <a href="#">Spread the Word</a><br>
                 <a href="#">Support Center</a><br>
                 <a href="#">F A Q</a>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 ft">
                 <h6>ABOUT</h6>
                 <a href="#">How it works</a><br>
                 <a href="#">Pricing</a><br>
@@ -229,5 +314,14 @@
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/core.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.dropdown-submenu a.test').on("click", function(e){
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+            });
+        });
+    </script>
 </body>
 </html>
