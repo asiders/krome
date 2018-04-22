@@ -9,7 +9,7 @@
     }
     
     .hons{
-        display: inline-block;
+        display: flex;
     }
     .navbar_link_center{
         margin-top: 13px;
