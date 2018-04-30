@@ -7,6 +7,7 @@ function hidelogin(){
     hide_mob_sidenav();
 }
 function showlogin(){
+    hideSignup();
     var l = document.getElementsByClassName("log_in_wrap")[0];
     l.style.marginTop="0";
     hide_mob_sidenav();
@@ -22,4 +23,17 @@ function show_mob_login(){
 }
 function hide_mob_sidenav(){
     document.getElementsByClassName("mob_login")[0].style.marginTop="-300px";
+}
+
+function showSignup(){
+    var S = document.getElementById("sign-up");
+    hidelogin();
+    S.style.height = "100%";
+    document.getElementsByTagName("body")[0].style.overflow="hidden"; 
+}
+function hideSignup(){
+    hidelogin();
+    document.getElementsByTagName("body")[0].style.overflow="auto";
+    var S = document.getElementById("sign-up");
+    S.style.height = "0";
 }

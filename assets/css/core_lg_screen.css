@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @media only screen and (min-width: 900px) {
+
+    .signup-form{
+        width: 50%;
+    }
     ._accordion{
         display: block;
     }

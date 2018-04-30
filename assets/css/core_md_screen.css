@@ -1,4 +1,7 @@
 @media only screen and (min-width: 500px) {
+    .signup-form{
+        width: 75%;
+    }
     .brand{
         white-space: nowrap;
         color: white;
@@ -36,7 +39,5 @@
     }
     .nav_d_items:hover{
         position: relative;
-        background-color: white;
-        box-shadow: 2px 0px 0px 0px rgba(0,0,0,.14);
     }
 }

@@ -255,7 +255,7 @@ a:hover {
     width: 100%;
     position: absolute;
     z-index: 99;
-    height: 200px;
+    height: 250px;
     margin: 0;
     margin-top: -250px;
     overflow: hidden;
@@ -265,7 +265,7 @@ a:hover {
 .log_in_body{
     width: 400px;
     max-width: 100%;
-    height: 200px;
+    height: 230px;
     margin: auto;
     background-color: white;
     box-shadow: 0 1px 15px rgba(0,0,0,.14);
@@ -629,4 +629,103 @@ a:hover {
 }
 .hons{
     display: none;
+}
+
+
+/* SIGN UP */   
+#sign-in , #sign-up{
+    position:fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    z-index: 9999992000;
+    width: 100vw;
+    height: 0px;
+    background-color: rgba(255,255,255,0.9);
+    overflow: scroll;
+    -webkit-transition: height 0.5s; /* Safari */
+    transition: height 0.5s;
+    display:block;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    
+}
+.close-sign-up{
+    color: red;
+    font-size: 14px;
+}
+.close-sign-up:hover{
+    text-decoration: none;
+}
+.signup-form{
+    width: 95%;
+    padding-left: 80px;
+    padding-right: 80;
+    box-shadow: 2px 2px 2px 0 #ccc;
+    background-color: white;
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 0;
+    margin: auto;
+    
+}
+.signup-form .row{
+    text-align: left;
+    z-index: 20000;
+}
+.signup-wrapper{
+    z-index: 99999900;
+    position: relative;
+    padding: 50px;
+}
+.sign-alt{
+    float: right;
+}
+.left-shadow{
+    width: 50%;
+    height: 80px;
+    position:   absolute;
+    left: 10px;
+    bottom: 14px;
+    -ms-transform: rotate(-3deg); /* IE 9 */
+    -webkit-transform: rotate(-3deg); /* Safari */
+    transform: rotate(-3deg);
+    box-shadow: 2px 20px 10px 0 rgba(100,100,100,0.8);
+    z-index: -50;
+    -webkit-transition: box-shadow 0.5s; /* Safari */
+    transition: box-shadow 0.5s;
+}
+
+.right-shadow{
+    width: 50%;
+    height: 80px;
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    -ms-transform: rotate(3deg); /* IE 9 */
+    -webkit-transform: rotate(3deg); /* Safari */
+    transform: rotate(3deg);
+    box-shadow: 2px 20px 10px 0 rgba(100,100,100,0.8);
+    z-index: -50;
+    -webkit-transition: box-shadow 0.5s; /* Safari */
+    transition: box-shadow 0.5s;
+}
+.cover-shadow{
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    z-index: 100;
+}
+.push-left{
+    margin-right: 30%;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
 }

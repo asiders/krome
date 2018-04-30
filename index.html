@@ -18,6 +18,45 @@
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index.css" /> -->
 </head>
 <body>
+    <div id="sign-up"><br>
+          <form class="form signup-form" >
+            <div class="signup-wrapper">
+            <a href="#" class="float-right close-sign-up" onclick="hideSignup()"><i data-feather="x"></i></a>
+            <h2>Sign up</h2>
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                    <label>Full-Name</label>
+                    <input class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input class="form-control" type="email" />
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input class="form-control" type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input class="form-control" type="password"/>
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input class="form-control" type="password"/>
+                </div>
+<!--                <button class=""></button>-->
+                <input class="btn btn-primary sign-btn" type="submit" value="Submit"> 
+                <a class="sign-alt" href="#" onclick="showlogin()">Already have an account?</a>
+              </div>
+              </div>
+            </div>
+              <div class="left-shadow"></div>
+              <div class="right-shadow"></div>
+<!--              <div class="cover-shadow"></div>-->
+              
+          </form>
+    </div>
     <div class="navigation_wrapper">
         <div class="navigation_bar">
             <div class="navigation_body">
@@ -28,7 +67,7 @@
                     <div class="navbar-login-others">
                         <ul class="navbar-links">
                             <li class="link_items"><a href="#Log-in" class="link" onclick="showlogin()">Log in</a></li>
-                            <li class="link_items"><a href="" class="link">Join us</a></li>
+                            <li class="link_items"><a onclick="showSignup()" href="#" class="link">Join us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -46,7 +85,7 @@
         <div class="mob_login">
             <ul class="mob_navbar-links">
                 <li class="mob_link_items"><a href="#Log-in" class="link" onclick="showlogin()">Log in</a></li>
-                <li class="mob_link_items"><a href="#" onclick="hide_mob_sidenav()" class="link">Join us</a></li>
+                <li class="mob_link_items"><a href="#" onclick="showSignup()" class="link">Join us</a></li>
             </ul>
             <div class="navbar_search_end">
                 <form action="" class="mob_site_search">
@@ -104,6 +143,7 @@
                     <input class="login_sub" type="submit" value="login">
                 </span>
                 <a onclick="hidelogin()" title="hide login widget" class="login_hide" href="#"><i data-feather="chevrons-up"></i></a>
+                <a class="sign-alt push-left" href="#" onclick="showSignup()">Already have an account?</a>
             </form>
         </div>        
     </div>
@@ -224,7 +264,7 @@
         <div class="footer">
             <div class="col-sm-4 ft">
                 <h6>GETTING STARTED</h6>
-                <a href="#">Join Kromevents</a><br>
+                <a href="#" onclick="showSignup()">Join Kromevents</a><br>
                 <a href="#">Create Event</a><br>
                 <a href="#">Browse Events</a>
             </div>
