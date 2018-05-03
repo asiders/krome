@@ -15,95 +15,135 @@
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/index.css" /> -->
 </head>
 <body>
-    <div class="navigation_wrapper">
-        <div class="navigation_bar">
-            <div class="navigation_body">
-                <div class="navbar_logo_left nav_child">
-                        <a href="home" class=""><h1 class="brand">Krom <span>Events</span></h1></a>
-                </div>
-                <div class="navbar_link_center nav_child">
-                    <div class="navbar-login-others">
-                        <ul class="navbar-links">
-                            <li class="link_items"><a href="#Log-in" class="link" onclick="showlogin()">Log in</a></li>
-                            <li class="link_items"><a href="" class="link">Join us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="navbar_search_end nav_child">
-                    <form action="" class="site_search">
-                        <input type="text" placeholder="Search events" class="search_input"/>
-                        <button class="search_btn"><i data-feather="search"></i></button>
-                    </form>
-                    <button class="menu_btn" onclick="show_mob_login()"><i data-feather="menu"></i></button>
-                </div>
+    <div id="sign-up"><br>
+        <form class="form signup-form" >
+          <div class="signup-wrapper">
+          <a href="#" class="float-right close-sign-up" onclick="hideSignup()"><i data-feather="x"></i></a>
+          <h2>Sign up</h2>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                  <label>Full-Name</label>
+                  <input class="form-control" type="text" />
+              </div>
+              <div class="form-group">
+                  <label>Email</label>
+                  <input class="form-control" type="email" />
+              </div>
+              <div class="form-group">
+                  <label>Phone</label>
+                  <input class="form-control" type="text" />
+              </div>
+              <div class="form-group">
+                  <label>Password</label>
+                  <input class="form-control" type="password"/>
+              </div>
+              <div class="form-group">
+                  <label>Confirm Password</label>
+                  <input class="form-control" type="password"/>
+              </div>
+<!--                <button class=""></button>-->
+              <input class="btn btn-primary sign-btn" type="submit" value="Submit"> 
+              <a class="sign-alt" href="#" onclick="showlogin()">Already have an account?</a>
             </div>
-        </div>
-    </div>
-    <div class="mob_login_wrap">
-        <div class="mob_login">
-            <ul class="mob_navbar-links">
-                <li class="mob_link_items"><a href="#Log-in" class="link" onclick="showlogin()">Log in</a></li>
-                <li class="mob_link_items"><a href="#" onclick="hide_mob_sidenav()" class="link">Join us</a></li>
-            </ul>
-            <div class="navbar_search_end">
-                <form action="" class="mob_site_search">
-                <input type="text" placeholder="Search events" class="search_input"/>
-                    <button class="search_btn"><i data-feather="search"></i></button>
-                    <p hidden id="login_toogle">0</p>
-                </form>
             </div>
-        </div>
-    </div>
-    <div class="nav_wrap sticky-top">
-        <div class="navigations">
-            <ul class="nav_d_wrap">
-                <li class="nav_d_items"><a href="1">Item</a></li>
-                <li class="nav_d_items"><a href="2">Item</a></li>
-                <li class="nav_d_items hons"><a href="3">Item H1</a></li>
-                <li class="nav_d_items hons"><a href="4">Item H2</a></li>
-                <li class="nav_d_items hons"><a href="1">Item H3</a></li>
-                <li class="nav_d_items hons"><a href="2">Item H4</a></li>
-                <li class="nav_d_items hons"><a href="3">Item H5</a></li>
-                <li class="nav_d_items"><a class="nav_link row_align" href="4" class="row_align">Category <i data-feather="chevrons-down"></i></a>
-                    <div class="hoverdrop">
-                        <ul>
-                            <li><a href="link">Drop Item</a></li>
-                            <li><a href="link">Drop Item</a></li>
-                            <li><a href="link">Drop Item</a></li>
-                            <li><a href="link">Drop Item</a></li>
-                            <li><a href="link">Drop Item</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav_d_items sons"><a class="nav_link row_align" href="4" class="row_align">More <i data-feather="more-vertical"></i></a>
-                    <div class="hoverdrop">
-                        <ul>
-                            <li><a href="link">Drop Item H1</a></li>
-                            <li><a href="link">Drop Item H2</a></li>
-                            <li><a href="link">Drop Item H3</a></li>
-                            <li><a href="link">Drop Item H4</a></li>
-                            <li><a href="link">Drop Item H5</a></li>
-                            <a class="create_event_btn" href="createevent.html">Create Event Here</a>
-                        </ul>
-                    </div>
-                </li>
-                <a class="create_event_btn hons" href="createevent.html">Create Event Here</a>
-            </ul>
-        </div>
-    </div>
-    <div class="log_in_wrap">
-        <div class="log_in_body">
-            <form class="login_form" action="">
-                <input class="login_in" type="email" placeholder="email">
-                <input class="login_in" type="password" placeholder="password">
-                <span class="login_in">
-                    <label><input type="checkbox"> Remember me</label>
-                    <input class="login_sub" type="submit" value="login">
-                </span>
-                <a onclick="hidelogin()" title="hide login widget" class="login_hide" href="#"><i data-feather="chevrons-up"></i></a>
-            </form>
-        </div>        
-    </div>
+          </div>
+            <div class="left-shadow"></div>
+            <div class="right-shadow"></div>
+<!--              <div class="cover-shadow"></div>-->
+            
+        </form>
+  </div>
+  <div class="navigation_wrapper">
+      <div class="navigation_bar">
+          <div class="navigation_body">
+              <div class="navbar_logo_left nav_child">
+                      <a href="home" class=""><h1 class="brand">Krom <span>Events</span></h1></a>
+              </div>
+              <div class="navbar_link_center nav_child">
+                  <div class="navbar-login-others">
+                      <ul class="navbar-links">
+                          <li class="link_items"><a href="#Log-in" class="link" onclick="showlogin()">Log in</a></li>
+                          <li class="link_items"><a onclick="showSignup()" href="#" class="link">Join us</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="navbar_search_end nav_child">
+                  <form action="" class="site_search">
+                      <input type="text" placeholder="Search events" class="search_input"/>
+                      <button class="search_btn"><i data-feather="search"></i></button>
+                  </form>
+                  <button class="menu_btn" onclick="show_mob_login()"><i data-feather="menu"></i></button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="mob_login_wrap">
+      <div class="mob_login">
+          <ul class="mob_navbar-links">
+              <li class="mob_link_items"><a href="#Log-in" class="link" onclick="showlogin()">Log in</a></li>
+              <li class="mob_link_items"><a href="#" onclick="showSignup()" class="link">Join us</a></li>
+          </ul>
+          <div class="navbar_search_end">
+              <form action="" class="mob_site_search">
+              <input type="text" placeholder="Search events" class="search_input"/>
+                  <button class="search_btn"><i data-feather="search"></i></button>
+                  <p hidden id="login_toogle">0</p>
+              </form>
+          </div>
+      </div>
+  </div>
+  <div class="nav_wrap sticky-top">
+          <div class="navigations">
+              <ul class="nav_d_wrap">
+                  <li class="nav_d_items"><a href="1">Item</a></li>
+                  <li class="nav_d_items"><a href="2">Item</a></li>
+                  <li class="nav_d_items hons"><a href="3">Item H1</a></li>
+                  <li class="nav_d_items hons"><a href="4">Item H2</a></li>
+                  <li class="nav_d_items hons"><a href="1">Item H3</a></li>
+                  <li class="nav_d_items hons"><a href="2">Item H4</a></li>
+                  <li class="nav_d_items hons"><a href="3">Item H5</a></li>
+                  <li class="nav_d_items"><a class="nav_link row_align" href="#" class="row_align">Category</a>
+                      <div class="hoverdrop">
+                          <ul>
+                              <li><a href="link">Drop Item</a></li>
+                              <li><a href="link">Drop Item</a></li>
+                              <li><a href="link">Drop Item</a></li>
+                              <li><a href="link">Drop Item</a></li>
+                              <li><a href="link">Drop Item</a></li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="nav_d_items sons"><a class="nav_link row_align" href="#" class="row_align">More</a>
+                      <div class="hoverdrop">
+                          <ul>
+                              <li><a href="link">Drop Item H1</a></li>
+                              <li><a href="link">Drop Item H2</a></li>
+                              <li><a href="link">Drop Item H3</a></li>
+                              <li><a href="link">Drop Item H4</a></li>
+                              <li><a href="link">Drop Item H5</a></li>
+                              <a class="create_event_btn" href="createevent.html">Create Event Here</a>
+                          </ul>
+                      </div>
+                  </li>
+                  <a class="create_event_btn hons" href="createevent.html">Create Event Here</a>
+              </ul>
+          </div>
+  </div>
+  <div class="log_in_wrap">
+      <div class="log_in_body">
+          <form class="login_form" action="">
+              <input class="login_in" type="email" placeholder="email">
+              <input class="login_in" type="password" placeholder="password">
+              <span class="login_in">
+                  <label><input type="checkbox"> Remember me</label>
+                  <input class="login_sub" type="submit" value="login">
+              </span>
+              <a onclick="hidelogin()" title="hide login widget" class="login_hide" href="#"><i data-feather="chevrons-up"></i></a>
+              <a class="sign-alt push-left" href="#" onclick="showSignup()">Already have an account?</a>
+          </form>
+      </div>        
+  </div>
     <div class="site_section">
         <div class="detail-wrapper">
             <div class="detail-img" style="background:white url('assets/img/banner.png') no-repeat center ;background-size:cover;">
